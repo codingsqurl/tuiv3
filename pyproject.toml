@@ -1,0 +1,25 @@
+[project]
+name = "tuiv3"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "codingsqurl", email = "codingsqurl@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "textual>=8.2.8",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "textual-dev>=1.8.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
